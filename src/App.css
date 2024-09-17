@@ -1,0 +1,75 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+.wrapper{
+  background-image: url('https://freevector-images.s3.amazonaws.com/uploads/vector/preview/41724/Vector4free-Subtle-Gradient-Background-Rvsi1-DP0223_generated.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.formWrapper{
+  background-image: linear-gradient(to right, rgb(249, 253, 253) , rgb(113, 179, 206));
+
+}
+.loginImage{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+
+}
+
+.profile{
+  height: 150px;
+  width: 150px;
+}
+.heading
+{
+ color: rgb(70, 70, 189);
+}
+.box{
+  width: 280px;
+  height: 150px;
+  border-radius: 10%;
+  background-image: linear-gradient(to right, rgb(180, 109, 202) , rgb(113, 179, 206));
+   box-shadow: 5px 5px   20px ;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 10px solid rgb(113, 151, 194);
+  cursor: pointer;
+ 
+}
+
+.pagination {
+  padding: 10px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+.pagination button{
+  border: 1px solid gray;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-small;
+  background-color: rgb(238, 231, 231) ;
+
+}
+.pagination__disable{
+  opacity: 0;
+}
+
+.pagination__selected{
+  background-color: rgb(79, 151, 214) !important;
+
+}
