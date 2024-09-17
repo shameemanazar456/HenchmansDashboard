@@ -92,7 +92,7 @@ function GrievanceList({ grievances }) {
     }
   }
   useEffect(() => {
-    const lengthArray = ((grievances.length / 5) + 1)
+    const lengthArray = (Math.ceil(grievances.length / 5) + 1)
     console.log(lengthArray);
 
     for (let i = 0; i <= lengthArray; i++) {
