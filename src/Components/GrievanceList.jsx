@@ -95,8 +95,8 @@ function GrievanceList({ grievances }) {
     const lengthArray = ((grievances.length / 5) + 1)
     console.log(lengthArray);
 
-    for (let i = 1; i <= lengthArray; i++) {
-      paginationArray[i - 1] = i
+    for (let i = 0; i <= lengthArray; i++) {
+      paginationArray[i] = i+1
     }
     setPageNo(paginationArray);
 
