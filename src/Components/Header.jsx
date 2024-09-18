@@ -34,7 +34,7 @@ function Header() {
 
  const handleLogout = ()=>{
   setIsLogin(false)
-  sessionStorage.removeItem("loginId")
+  sessionStorage.removeItem("loginEMail")
   navigate('/')
  }
 
