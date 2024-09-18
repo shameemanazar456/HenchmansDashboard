@@ -31,7 +31,7 @@ function Dashboard() {
   const getGrievances = async()=>{
     const result = await getGrievanceApi("")
     setGrievancesContext(result.data)
-    console.log(grievances)
+    //console.log(grievances)
     setCount()
     
   }

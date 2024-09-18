@@ -27,17 +27,19 @@ function GrievanceList({ grievances }) {
   })
 
   /* CODE TO IMPLEMENT EDIT GRIEVANCE FUNCTIONALITY */
+
+  //Function to close edit moda;
   const handleCloseEdit = () => {
     setShowEdit(false)
 
   };
+  //function to show edit modal
   const handleEdit = (item) => {
     console.log(item);
     setUpdateGrievance(item)
-    console.log(updateGrievance);
     setShowEdit(true)
   };
-
+//function to update status
   const updateStatus = (value) => {
     if (value) {
       setUpdateGrievance({ ...updateGrievance, status: 'completed' })
@@ -92,15 +94,15 @@ function GrievanceList({ grievances }) {
     }
   }
   useEffect(() => {
-    const lengthArray = (Math.ceil(grievances.length / 5) + 1)
+    const lengthArray = (Math.ceil(grievances.length / 5))
     console.log(lengthArray);
 
-    for (let i = 0; i <= lengthArray; i++) {
+    for (let i = 0; i < lengthArray; i++) {
       paginationArray[i] = i+1
     }
     setPageNo(paginationArray);
 
-  }, [])
+  }, [grievances])
 
   return (
     <div className='d-flex align-items-center justify-content-center flex-column w-100'>
